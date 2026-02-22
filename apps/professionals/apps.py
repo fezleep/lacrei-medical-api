@@ -1,8 +1,6 @@
-
-
 from django.apps import AppConfig
-
 
 class ProfessionalsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'apps.professionals'
+    label = 'professionals' # Verifique se não há duplicatas aqui

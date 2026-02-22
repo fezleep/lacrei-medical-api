@@ -9,6 +9,21 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
+from datetime import timedelta
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',  
+    ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema', # Para o Swagger bônus
+}   
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+}
 
 from pathlib import Path
 
@@ -38,15 +53,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
     # Libs de terceiros (instaladas via Poetry)
     'rest_framework',
     'corsheaders',
     'drf_spectacular',
+    'rest_framework_simplejwt',
 
     # Seus Apps Locais (ajustados para a pasta apps/)
-    'apps.professionals.apps.ProfessionalsConfig',
-    'apps.appointments.apps.AppointmentsConfig',
+    'apps.professionals',
+    'apps.appointments',
+
 ]
 
 MIDDLEWARE = [
@@ -57,6 +74,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -130,3 +149,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
