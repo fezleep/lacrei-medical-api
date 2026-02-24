@@ -1,6 +1,3 @@
-Perfeito. Vou manter exatamente seu padrão, sua estrutura e seu jeito direto, só ajustando pequenas coisas de fluidez e coerência — sem deixar com cara de IA.
-
----
 
 **Lacrei Medical API**
 
