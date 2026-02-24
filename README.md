@@ -145,3 +145,15 @@ Nova execução do pipeline
 Possibilidade de retornar a imagem Docker anterior
 
 ---
+
+💙 Agradecimentos
+Gostaria de expressar minha gratidão a toda a equipe da Lacrei Saúde pela oportunidade de participar deste processo seletivo.
+
+Desenvolver este desafio foi uma jornada de muito aprendizado e dedicação. Para mim, esta vaga representa mais do que um próximo passo na minha carreira técnica; é a chance de contribuir com uma organização que utiliza a tecnologia como ponte para a dignidade e o acesso à saúde.
+
+Acredito profundamente na missão da Lacrei e encaro essa oportunidade com total responsabilidade e entusiasmo. Estou pronto para me dedicar intensamente, aprender com o time e entregar resultados que ajudem a impulsionar o impacto positivo que vocês já realizam na sociedade.
+
+Muito obrigado pela confiança e pelo tempo dedicado à análise deste projeto.
+
+Atenciosamente,
+Felipe
