@@ -1,0 +1,22 @@
+# Ambientes Virtuais (Não enviar!)
+.venv/
+venv/
+env/
+ENV/
+
+# Arquivos de Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Banco de Dados Local (SQLite)
+*.sqlite3
+
+# Arquivos de Log e Variáveis Sensíveis
+*.log
+.env
+
+# Pastas de IDEs
+.vscode/
+.idea/
