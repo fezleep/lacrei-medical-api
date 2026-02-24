@@ -1,4 +1,3 @@
-
 **Lacrei Medical API**
 
 API REST desenvolvida para o desafio técnico da Lacrei Saúde.
